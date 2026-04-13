@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TwirperController;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [TwirperController::class,'index']);
 
 
