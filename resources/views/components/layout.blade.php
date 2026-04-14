@@ -8,14 +8,17 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="">
-    <nav class="w-100% h-15 bg-gray-200 flex p-3" >
-       <div>
-            <a href="">Twirper</a>
+<body class="flex flex-col min-h-screen">
+    <nav class="w-full h-15 bg-gray-200 flex p-3 justify-between " >
+       <div class="justify-start content-center flex gap-3">
+
+            <img src="{{ asset('images/logo.png') }}" alt="Twirper" > <!-- o asset seta basicamente, a imagem como uma var no local, pedi ajuda pro gpt com isso-->
+            <a href="" Class="text-xl text-gray-500"><b>Twirper</b></a>
+            
        </div>
-       <div class="flex-end">
-            <a href="">LogIn</a>
-            <a href="">SignUp</a>
+       <div class="jusity-end content-center">
+            <a href="" class="p-2 border border-gray-400 rounded-lg bg-white shadow-2xs hover:bg-gray-100">Log In</a>
+            <a href="" class="p-2 rounded-lg bg-blue-700 text-white shadow-2xs hover:bg-blue-900 ">Sign Up</a>
        </div>
     </nav>
 
@@ -23,9 +26,9 @@
         {{$slot}}
     </main>
 
-    <footer class=" w-100% h-15 bg-gray-200 flex p-3">
+    <footer class=" w-100% h-15 bg-gray-200 flex p-3 justify-center content-center">
         <div>
-            <p>© 2026 Twirper - Built with Laravel by Gustavo Nicácio</p>
+            <p>© 2026 Twirper  <u>Built with Laravel by Gustavo Nicácio</u></p>
         </div>
     </footer>
 </body>

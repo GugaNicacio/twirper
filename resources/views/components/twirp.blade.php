@@ -1,10 +1,8 @@
-<x-layout>
-    <x-slot:title>
-        Home
-    </x-slot:title>
+@props(['twirp'])
 
-    <div class="max-w-2xl mx-auto">
+<div class="max-w-2xl mx-auto">
       
+    
         @forelse ($twirp as $twirps) <!--mudou de enquanto pra , para cada-->
             <div class="card bg-base-100 shadow mt-8">
                 <div class="card-body p-8 rounded">
@@ -21,4 +19,3 @@
             <p>Sem twirps por enquanto. Seja o primeiro a mandar</p>
         @endforelse        
     </div>
-</x-layout>
