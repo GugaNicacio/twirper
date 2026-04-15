@@ -57,108 +57,134 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-
-
-
-🐦 Twirper
+# 🐦 Twirper
 
 Microblog desenvolvido com Laravel durante o estudo do Laravel Bootcamp (Chirper).
 
 A ideia do projeto é simples: permitir que usuários publiquem pequenos textos (twirps), com autenticação e controle de acesso.
 
-🚀 Tecnologias utilizadas
--PHP
--Laravel 13
--Blade
--Tailwind CSS
--DaisyUI
--SQLite
-🧠 Como o projeto funciona
+---
 
-O projeto segue o padrão MVC (Model - View - Controller), que organiza bem a aplicação e evita bagunça no código.
+## 🚀 Tecnologias utilizadas
 
-Model → faz a comunicação com o banco de dados
+* PHP
+* Laravel 13
+* Blade
+* Tailwind CSS
+* DaisyUI
+* SQLite
 
-É tipo a “cozinha”, onde os dados são preparados e manipulados
+---
 
-View → responsável pelo que o usuário vê
+## 🧠 Como o projeto funciona
 
-Interface, layout e exibição das informações
+O projeto segue o padrão **MVC (Model - View - Controller)**, que organiza bem a aplicação e evita bagunça no código.
 
-Controller → controla o fluxo da aplicação
+* **Model** → faz a comunicação com o banco de dados
 
-Recebe as requisições, processa e envia os dados certos para a View
+  > É tipo a “cozinha”, onde os dados são preparados e manipulados
 
-🗄️ Banco de dados
+* **View** → responsável pelo que o usuário vê
 
-O Laravel usa o Eloquent ORM, que facilita muito trabalhar com banco sem precisar escrever SQL direto.
+  > Interface, layout e exibição das informações
+
+* **Controller** → controla o fluxo da aplicação
+
+  > Recebe as requisições, processa e envia os dados certos para a View
+
+---
+
+## 🗄️ Banco de dados
+
+O Laravel usa o **Eloquent ORM**, que facilita muito trabalhar com banco sem precisar escrever SQL direto.
 
 Algumas ideias importantes usadas no projeto:
 
-Models conectam automaticamente com suas tabelas
-Relacionamentos entre entidades (User → Twirps)
-Criação e manipulação de dados via código
-Testes e manipulação manual usando o terminal
+* Models conectam automaticamente com suas tabelas
+* Relacionamentos entre entidades (User → Twirps)
+* Criação e manipulação de dados via código
+* Testes e manipulação manual usando o terminal
 
 Ferramentas úteis:
 
-php artisan tinker → testar código e mexer no banco direto
-Seeders → popular o banco para testes
-Ferramentas externas de banco (qualquer GUI de SQLite, por exemplo)
-🔐 Autenticação e autorização
+* `php artisan tinker` → testar código e mexer no banco direto
+* Seeders → popular o banco para testes
+* Ferramentas externas de banco (qualquer GUI de SQLite, por exemplo)
+
+---
+
+## 🔐 Autenticação e autorização
 
 O sistema tem autenticação completa:
 
--Registro de usuário
--Login
--Logout
+* Registro de usuário
+* Login
+* Logout
 
 E também controle de acesso:
 
-Usuários só podem editar/deletar seus próprios posts
-Uso de Policies para definir permissões
-Proteção de rotas com middleware
+* Usuários só podem editar/deletar seus próprios posts
+* Uso de **Policies** para definir permissões
+* Proteção de rotas com middleware
 
-⚙️ Funcionalidades
--Criar twirps
--Listar twirps (feed público)
--Editar twirps
--Deletar twirps
--Cadastro de usuário
--Login e logout
+---
 
-🧭 Rotas principais
-/ → feed público
-/login → login
-/register → cadastro
-/logout → logout
+## ⚙️ Funcionalidades
+
+* Criar twirps
+* Listar twirps (feed público)
+* Editar twirps
+* Deletar twirps
+* Cadastro de usuário
+* Login e logout
+
+---
+
+## 🧭 Rotas principais
+
+* `/` → feed público
+* `/login` → login
+* `/register` → cadastro
+* `/logout` → logout
 
 Rotas protegidas garantem que apenas usuários autenticados acessem certas ações.
 
-🎨 Frontend
-Tailwind CSS para estilização
-DaisyUI para componentes prontos
-Layout usando flexbox
-Customização com gradientes e estilos próprios
+---
 
-🧩 Estrutura e organização
-Uso de controllers tradicionais e também invokable controllers
-Separação clara de responsabilidades
-Código organizado seguindo o padrão do Laravel
-📚 O que foi aprendido
+## 🎨 Frontend
+
+* **Tailwind CSS** para estilização
+* **DaisyUI** para componentes prontos
+* Layout usando flexbox
+* Customização com gradientes e estilos próprios
+
+---
+
+## 🧩 Estrutura e organização
+
+* Uso de controllers tradicionais e também invokable controllers
+* Separação clara de responsabilidades
+* Código organizado seguindo o padrão do Laravel
+
+---
+
+## 📚 O que foi aprendido
 
 Durante o desenvolvimento do projeto:
 
--Estrutura geral do Laravel
--Uso do Eloquent ORM na prática
--Relacionamento entre models
--Sistema de autenticação
--Autorização com policies
--Organização com MVC
--Integração entre backend (Laravel) e frontend (Blade + Tailwind)
--Uso de ferramentas do próprio Laravel para debug e testes
+* Estrutura geral do Laravel
+* Uso do Eloquent ORM na prática
+* Relacionamento entre models
+* Sistema de autenticação
+* Autorização com policies
+* Organização com MVC
+* Integração entre backend (Laravel) e frontend (Blade + Tailwind)
+* Uso de ferramentas do próprio Laravel para debug e testes
 
-👨‍💻 Autor
+---
 
-Gustavo Nicácio - Com utilização de ia para embelezamento textual
-Projeto de estudo com Laravel — 2026 
+## 👨‍💻 Autor
+
+**Gustavo Nicácio** - com utilização de ia para gerção de textos -
+Projeto de estudo com Laravel — 2026
+
