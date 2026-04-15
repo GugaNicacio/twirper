@@ -11,12 +11,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-gradient-to-r from-[#425E83] via-[#6999c9] to-[#5D3A93]" > 
     <nav class="w-full h-15 bg-gray-200 flex p-3 justify-between " >
        <div class="justify-start content-center flex gap-3">
 
             <img src="{{ asset('images/logo.png') }}" alt="Twirper" > <!-- o asset seta basicamente, a imagem como uma var no local, pedi ajuda pro gpt com isso-->
-            <a href="/" Class="text-xl text-gray-500"><b>Twirper</b></a>
+            <a href="/" Class="text-xl text-gray-500 hover:text-black"><b>Twirper</b></a>
             
        </div>
        <div>
@@ -27,8 +27,8 @@
             <button type="submit" class="btn btn-ghost btn-sm">Logout</button>
         </form>
         @else
-            <a href="" class="p-2 border border-gray-400 rounded-lg bg-white shadow-2xs hover:bg-gray-100">Log In</a>
-            <a href="{{ route('register') }}" class="p-2 rounded-lg bg-blue-700 text-white shadow-2xs hover:bg-blue-900 ">Sign Up</a>
+            <a href="{{ route('login') }}" class="p-2 border border-gray-400 rounded-lg bg-white shadow-2xs hover:bg-gray-100">Log In</a>
+            <a href="{{ route('register') }}" class="p-2 rounded-lg bg-[#425E83] shadow-2xs text-white hover:bg-[#6382aa]">Sign Up</a>
         @endauth
         </div>
     </nav>
@@ -46,11 +46,12 @@
         {{$slot}}
     </main>
 
-    <footer class=" w-100% h-15 bg-gray-200 flex p-3 justify-center content-center">
+    <footer class="bm-0 w-full bg-gray-200 flex p-3 justify-center items-center">
         <div>
             <p>© 2026 Twirper  <u>Built with Laravel by Gustavo Nicácio</u></p>
         </div>
     </footer>
+</div>
 </body>
 
 </html>

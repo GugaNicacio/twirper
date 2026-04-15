@@ -32,7 +32,7 @@
                         <label class="floating-label mb-6">
                             <input type="email"
                                    name="email"
-                                   placeholder="[mail@example.com](<mailto:mail@example.com>)"
+                                   placeholder="Resenha@gmail.com"
                                    value="{{ old('email') }}"
                                    class="input input-bordered @error('email') input-error @enderror"
                                    required>
@@ -71,7 +71,7 @@
 
                         <!-- Submit Button -->
                         <div class="form-control mt-8">
-                            <button type="submit" class="btn btn-primary btn-sm w-full">
+                            <button type="submit" class="btn w-full bg-[#425E83] text-white hover:bg-[#6382aa]">
                                 Cadastrar
                             </button>
                         </div>

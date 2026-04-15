@@ -25,7 +25,7 @@
                         @enderror
                     </div>    
                     <div class="mt-4 flex items-center justify-end">
-                        <button type="submit" class="btn btn-primary btn-sm">
+                        <button type="submit" class="btn bg-[#425E83] text-white hover:bg-[#6382aa]">
                             Twirp
                         </button>
                     </div>
