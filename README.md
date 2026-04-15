@@ -67,12 +67,12 @@ Microblog desenvolvido com Laravel durante o estudo do Laravel Bootcamp (Chirper
 A ideia do projeto é simples: permitir que usuários publiquem pequenos textos (twirps), com autenticação e controle de acesso.
 
 🚀 Tecnologias utilizadas
-PHP
-Laravel 13
-Blade
-Tailwind CSS
-DaisyUI
-SQLite
+-PHP
+-Laravel 13
+-Blade
+-Tailwind CSS
+-DaisyUI
+-SQLite
 🧠 Como o projeto funciona
 
 O projeto segue o padrão MVC (Model - View - Controller), que organiza bem a aplicação e evita bagunça no código.
@@ -109,22 +109,24 @@ Ferramentas externas de banco (qualquer GUI de SQLite, por exemplo)
 
 O sistema tem autenticação completa:
 
-Registro de usuário
-Login
-Logout
+-Registro de usuário
+-Login
+-Logout
 
 E também controle de acesso:
 
 Usuários só podem editar/deletar seus próprios posts
 Uso de Policies para definir permissões
 Proteção de rotas com middleware
+
 ⚙️ Funcionalidades
-Criar twirps
-Listar twirps (feed público)
-Editar twirps
-Deletar twirps
-Cadastro de usuário
-Login e logout
+-Criar twirps
+-Listar twirps (feed público)
+-Editar twirps
+-Deletar twirps
+-Cadastro de usuário
+-Login e logout
+
 🧭 Rotas principais
 / → feed público
 /login → login
@@ -138,6 +140,7 @@ Tailwind CSS para estilização
 DaisyUI para componentes prontos
 Layout usando flexbox
 Customização com gradientes e estilos próprios
+
 🧩 Estrutura e organização
 Uso de controllers tradicionais e também invokable controllers
 Separação clara de responsabilidades
@@ -146,14 +149,15 @@ Código organizado seguindo o padrão do Laravel
 
 Durante o desenvolvimento do projeto:
 
-Estrutura geral do Laravel
-Uso do Eloquent ORM na prática
-Relacionamento entre models
-Sistema de autenticação
-Autorização com policies
-Organização com MVC
-Integração entre backend (Laravel) e frontend (Blade + Tailwind)
-Uso de ferramentas do próprio Laravel para debug e testes
+-Estrutura geral do Laravel
+-Uso do Eloquent ORM na prática
+-Relacionamento entre models
+-Sistema de autenticação
+-Autorização com policies
+-Organização com MVC
+-Integração entre backend (Laravel) e frontend (Blade + Tailwind)
+-Uso de ferramentas do próprio Laravel para debug e testes
+
 👨‍💻 Autor
 
 Gustavo Nicácio - Com utilização de ia para embelezamento textual
